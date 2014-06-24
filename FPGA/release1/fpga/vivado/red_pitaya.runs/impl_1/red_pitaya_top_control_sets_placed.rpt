@@ -1,0 +1,192 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.3 (lin64) Build 329390 Wed Oct 16 18:26:55 MDT 2013
+| Date         : Tue Jun 24 10:28:47 2014
+| Host         : polarbox1 running 64-bit Ubuntu 14.04 LTS
+| Command      : report_control_sets -verbose -file red_pitaya_top_control_sets_placed.rpt
+| Design       : red_pitaya_top
+| Device       : xc7z010
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   139 |
+| Minimum Number of register sites lost to control set restrictions |   396 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             805 |          261 |
+| No           | No                    | Yes                    |              17 |            3 |
+| No           | Yes                   | No                     |             860 |          228 |
+| Yes          | No                    | No                     |             647 |          250 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1451 |          490 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------------+----------------------------------------------------------------+-----------------------------------------+------------------+----------------+
+|                         Clock Signal                        |                          Enable Signal                         |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++-------------------------------------------------------------+----------------------------------------------------------------+-----------------------------------------+------------------+----------------+
+|  i_daisy/i_rx/par_clk                                       |                                                                | i_daisy/i_rx/n_0_bitslip_cnt[3]_i_1     |                1 |              4 |
+|  i_analog/adc_clk_o                                         | i_pid/set_11_irst                                              | i_pid/n_0_out_1_sat[12]_i_1             |                1 |              4 |
+|  i_daisy/i_rx/par_clk                                       |                                                                |                                         |                2 |              4 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_trig_src[3]_i_1                                | i_scope/clear                           |                2 |              4 |
+|  i_analog/dac_2clk                                          | i_analog/n_0_dac_pwm_ba[14]_i_1                                | i_analog/n_0_dac_pwm_ba[15]_i_1         |                1 |              4 |
+|  i_analog/dac_2clk                                          | i_analog/n_0_dac_pwm_bcnt[3]_i_1                               | i_analog/dac_rst                        |                1 |              4 |
+|  i_analog/adc_clk_o                                         |                                                                | i_daisy/i_tx/n_0_ODDR_clk_i_1           |                2 |              5 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_pid/i_bridge/p_0_in__0                |                1 |              5 |
+|  i_analog/adc_clk_o                                         |                                                                | i_asg/i_cha/n_0_dac_trig_i_1            |                3 |              6 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_ps/i_gp0_slave/n_0_axi_bresp_o[1]_i_1 |                1 |              6 |
+|  i_analog/adc_clk_o                                         |                                                                | i_asg/n_0_trig_a_sw_i_1                 |                4 |              6 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_asg/i_bridge/p_0_in__0                |                1 |              6 |
+|  i_analog/adc_clk_o                                         |                                                                | i_asg/i_chb/n_0_dac_pnt[29]_i_1         |                3 |              6 |
+|  i_analog/adc_clk_o                                         | i_asg/i_chb/n_0_ext_trig_debn[15]_i_1                          | i_asg/i_chb/n_0_dac_pnt[29]_i_1         |                2 |              7 |
+|  i_analog/adc_clk_o                                         | i_asg/i_cha/n_0_ext_trig_debn[15]_i_1                          | i_asg/i_cha/n_0_dac_trig_i_1            |                2 |              7 |
+|  i_analog/adc_clk_o                                         | i_asg/i_cha/n_0_ext_trig_debp[15]_i_1                          | i_asg/i_cha/n_0_dac_trig_i_1            |                2 |              7 |
+|  i_analog/adc_clk_o                                         | i_asg/i_chb/n_0_ext_trig_debp[15]_i_1                          | i_asg/i_chb/n_0_dac_pnt[29]_i_1         |                2 |              7 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/n_0_led_reg[7]_i_2                                        | i_hk/clear                              |                3 |              7 |
+|  i_analog/adc_clk_o                                         |                                                                | i_daisy/n_0_tx_cfg_new[3]_i_1           |                3 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/n_0_exp_n_dir_o[7]_i_1                                    | i_hk/clear                              |                3 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/n_0_exp_n_dat_o[7]_i_1                                    | i_hk/clear                              |                2 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/n_0_exp_p_dir_o[7]_i_1                                    | i_hk/clear                              |                3 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/n_0_exp_p_dat_o[7]_i_1                                    | i_hk/clear                              |                4 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/sel                                                       | i_hk/clear                              |                3 |              9 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_pint_r[11]_i_1                                   |                                         |                5 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_d_r[11]_i_1                                      |                                         |                3 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_paux_r[11]_i_1                                   |                                         |                7 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_bram_r[11]_i_1                                   |                                         |                6 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_int_r[11]_i_1                                    |                                         |                7 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_aux_r[11]_i_1                                    |                                         |                6 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_ddr_r[11]_i_1                                    |                                         |                6 |             12 |
+|  i_analog/adc_clk_o                                         | i_daisy/i_tx/n_0_par_dat_r[11]_i_1                             | i_daisy/i_tx/n_0_ODDR_clk_i_1           |                5 |             12 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_ams/n_0_sys_rdata_o[11]_i_1           |                6 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_a_r[11]_i_1                                      |                                         |                4 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_b_r[11]_i_1                                      |                                         |                4 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_c_r[11]_i_1                                      |                                         |                6 |             12 |
+|  i_analog/dac_2clk                                          |                                                                | i_analog/dac_rst                        |                6 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_v_r[11]_i_1                                      |                                         |                5 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/n_0_adc_temp_r[11]_i_1                                   |                                         |                6 |             12 |
+|  i_analog/adc_clk_o                                         |                                                                | i_scope/i_dfilt1_chb/n_0_r5_reg[12]_i_1 |                2 |             13 |
+|  i_analog/adc_clk_o                                         |                                                                | i_scope/i_dfilt1_cha/n_0_r5_reg[12]_i_1 |                2 |             13 |
+|  i_analog/adc_clk_o                                         |                                                                | i_asg/i_cha/n_0_dac_o[12]_i_1           |                3 |             13 |
+|  i_analog/adc_clk_o                                         |                                                                | i_asg/i_chb/n_0_dac_o[12]_i_1           |                3 |             13 |
+|  i_analog/adc_clk_o                                         | i_asg/set_a_zero                                               | i_asg/n_0_trig_a_sw_i_1                 |               10 |             14 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_a_tresh[13]_i_1                                | i_scope/clear                           |                6 |             14 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_b_tresh[13]_i_1                                | i_scope/clear                           |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_scope/adc_wp_trig0                                           | i_scope/n_0_adc_wp_trig[13]_i_1         |                6 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_21_kd[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_a_hyst[13]_i_1                                 | i_scope/clear                           |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_b_hyst[13]_i_1                                 | i_scope/clear                           |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_21_ki[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                5 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_21_kp[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                5 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_21_sp[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_11_kd[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                5 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_11_ki[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                5 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_11_kp[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_11_sp[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                5 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_12_kd[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_12_ki[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_12_kp[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_12_sp[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_22_kd[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                5 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_22_ki[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                6 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_22_kp[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/n_0_set_22_sp[13]_i_1                                    | i_pid/n_0_out_1_sat[12]_i_1             |                4 |             14 |
+|  i_daisy/i_rx/par_clk                                       | i_daisy/i_rx/par_val                                           | i_daisy/i_rx/n_0_i_iserdese_i_2         |                5 |             16 |
+|  i_analog/adc_clk_o                                         | i_daisy/tx_rx_dv0                                              | i_daisy/n_0_tx_cfg_new[3]_i_1           |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_daisy/i_test/tx_dv_o                                         | i_daisy/i_test/clear                    |                6 |             16 |
+|  i_daisy/n_0_txp_dv_reg_i_2                                 |                                                                |                                         |                7 |             17 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_dec[16]_i_1                                    | i_scope/clear                           |                6 |             17 |
+|  i_daisy/i_rx/par_clk                                       |                                                                | i_daisy/i_rx/n_0_par_rstn_i_1           |                3 |             17 |
+|  i_daisy/i_rx/par_clk                                       | i_daisy/i_rx/par_rstn_o                                        |                                         |                8 |             17 |
+|  i_daisy/i_rx/par_clk_o                                     | i_daisy/rxp_dv_n0                                              | i_daisy/clear                           |                5 |             17 |
+|  i_daisy/i_rx/par_clk_o                                     |                                                                | i_daisy/i_test/p_0_in                   |                3 |             17 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_b_filt_aa[17]_i_1                              | i_scope/clear                           |                7 |             18 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_a_filt_aa[17]_i_1                              | i_scope/clear                           |                8 |             18 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_daisy/n_0_cfg_tx_sys[31]_i_2                                 | i_daisy/p_0_in__0                       |                4 |             19 |
+|  i_analog/adc_clk_o                                         | i_daisy/tx_cfg_sel0                                            | i_daisy/n_0_tx_cfg_new[3]_i_1           |                6 |             19 |
+|  i_daisy/i_rx/par_clk                                       |                                                                | i_daisy/i_rx/n_0_i_iserdese_i_2         |                8 |             20 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ams/n_0_dac_a_r[23]_i_2                                      | i_ams/n_0_dac_a_r[23]_i_1               |               10 |             24 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ams/n_0_dac_b_r[23]_i_1                                      | i_ams/n_0_dac_a_r[23]_i_1               |                6 |             24 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ams/n_0_dac_c_r[23]_i_1                                      | i_ams/n_0_dac_a_r[23]_i_1               |               11 |             24 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ams/n_0_dac_d_r[23]_i_1                                      | i_ams/n_0_dac_a_r[23]_i_1               |                6 |             24 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_b_filt_pp[24]_i_1                              | i_scope/clear                           |                9 |             25 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_b_filt_kk[24]_i_1                              | i_scope/clear                           |               11 |             25 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_b_filt_bb[24]_i_1                              | i_scope/clear                           |               11 |             25 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_a_filt_bb[24]_i_1                              | i_scope/clear                           |               11 |             25 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_a_filt_kk[24]_i_1                              | i_scope/clear                           |                8 |             25 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_a_filt_pp[24]_i_1                              | i_scope/clear                           |               11 |             25 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/n_0_out_1_sat[12]_i_1             |                6 |             26 |
+|  i_analog/adc_clk_o                                         |                                                                | i_hk/n_0_led_cnt[0]_i_1                 |                7 |             27 |
+|  i_analog/adc_clk_o                                         | i_scope/p_0_in18_out                                           | i_scope/n_0_adc_wp_trig[13]_i_1         |                7 |             28 |
+|  i_analog/adc_clk_o                                         |                                                                | i_test/n_0_fifo_aa[13]_i_1              |                8 |             28 |
+|  i_analog/adc_clk_o                                         | i_asg/n_0_set_b_amp[13]_i_1                                    | i_asg/n_0_trig_a_sw_i_1                 |               10 |             28 |
+|  i_analog/adc_clk_o                                         | i_asg/n_0_set_a_amp[13]_i_1                                    | i_asg/n_0_trig_a_sw_i_1                 |                7 |             28 |
+|  i_analog/dac_clk                                           |                                                                |                                         |                8 |             29 |
+|  i_analog/adc_clk_o                                         | i_asg/i_cha/n_0_dac_pnt[29]_i_1                                | i_asg/i_cha/n_0_dac_trig_i_1            |               11 |             30 |
+|  i_analog/adc_clk_o                                         | i_asg/i_chb/n_0_dac_pnt[29]_i_2                                | i_asg/i_chb/n_0_dac_pnt[29]_i_1         |               13 |             30 |
+|  i_analog/adc_clk_o                                         | i_asg/n_0_set_a_size[29]_i_1                                   | i_asg/n_0_trig_a_sw_i_1                 |               12 |             30 |
+|  i_analog/adc_clk_o                                         | i_asg/n_0_set_a_step[29]_i_1                                   | i_asg/n_0_trig_a_sw_i_1                 |               14 |             30 |
+|  i_analog/adc_clk_o                                         | i_asg/n_0_set_a_ofs[29]_i_1                                    | i_asg/n_0_trig_a_sw_i_1                 |               12 |             30 |
+|  i_analog/adc_clk_o                                         | i_asg/n_0_set_b_ofs[29]_i_1                                    | i_asg/n_0_trig_a_sw_i_1                 |               13 |             30 |
+|  i_analog/adc_clk_o                                         | i_asg/n_0_set_b_step[29]_i_1                                   | i_asg/n_0_trig_a_sw_i_1                 |                9 |             30 |
+|  i_analog/adc_clk_o                                         | i_asg/n_0_set_b_size[29]_i_1                                   | i_asg/n_0_trig_a_sw_i_1                 |               12 |             30 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/n_0_set_22_irst_reg               |                5 |             31 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/n_0_set_11_irst_reg               |                6 |             31 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/set_21_irst                       |                5 |             31 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/set_12_irst                       |                6 |             31 |
+|  i_daisy/i_rx/par_clk_o                                     | i_daisy/i_test/rx_dat_cnt0                                     | i_daisy/i_test/n_0_rx_dat_cnt[31]_i_1   |                8 |             32 |
+|  i_daisy/i_rx/par_clk_o                                     | i_daisy/i_test/rx_err_cnt0                                     | i_daisy/i_test/n_0_rx_err_cnt[31]_i_1   |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_set_dly[31]_i_1                                    | i_scope/clear                           |               12 |             32 |
+|  i_analog/adc_clk_o                                         | i_scope/n_0_adc_dly_cnt[0]_i_1                                 | i_scope/clear                           |                9 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/system_i/system_i/processing_system7_0/inst/FCLK_RESET0_N |                                         |               21 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/i_gp0_slave/n_0_wr_wdata[31]_i_1                          |                                         |                7 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_test/n_0_b1_r[31]_i_1                                        | i_test/n_0_a0_r[31]_i_1                 |                8 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_test/n_0_a1_r[31]_i_1                                        | i_test/n_0_a0_r[31]_i_1                 |                9 |             32 |
+|  i_analog/dac_2clk                                          | i_analog/n_0_dac_pwm_va[7]_i_1                                 |                                         |                6 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_test/n_0_b0_r[31]_i_1                                        | i_test/n_0_a0_r[31]_i_1                 |               11 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_test/n_0_a0_r[31]_i_2                                        | i_test/n_0_a0_r[31]_i_1                 |               11 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_pid/i_bridge/n_0_addr_o[19]_i_1                              |                                         |               14 |             34 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/i_gp0_slave/rd_do                                         |                                         |               13 |             35 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/i_gp0_slave/n_0_wr_awid[11]_i_1                           |                                         |               12 |             35 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/i_pid22/RSTP                      |                7 |             39 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/i_pid12/RSTP                      |                8 |             39 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/i_pid21/RSTP                      |                8 |             39 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/i_pid11/RSTP                      |                7 |             39 |
+|  i_analog/dac_2clk                                          | i_analog/n_0_dac_pwm[3]_i_1                                    |                                         |                8 |             40 |
+|  i_analog/adc_clk_o                                         |                                                                | i_daisy/i_test/clear                    |                9 |             49 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_asg/i_bridge/n_0_addr_o[19]_i_1                              |                                         |               17 |             50 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_scope/i_bridge/n_0_addr_o[19]_i_1                            |                                         |               21 |             52 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/n_0_dna_value[56]_i_1                                     | i_hk/clear                              |               11 |             57 |
+|  i_analog/dac_2clk                                          | i_analog/n_0_dac_pwm_ba[14]_i_1                                |                                         |               19 |             60 |
+|  i_analog/adc_clk_o                                         |                                                                | i_test/RSTA                             |               13 |             64 |
+|  i_analog/adc_clk_o                                         |                                                                | i_scope/i_dfilt1_cha/RSTB               |               23 |             67 |
+|  i_analog/adc_clk_o                                         |                                                                | i_scope/i_dfilt1_chb/RSTB               |               28 |             67 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                |                                         |               32 |             72 |
+|  i_analog/adc_clk_o                                         | adc_rstn                                                       |                                         |               39 |             84 |
+|  i_analog/adc_clk_o                                         |                                                                | i_scope/clear                           |               30 |             87 |
+|  i_analog/adc_clk_o                                         |                                                                |                                         |              212 |            700 |
++-------------------------------------------------------------+----------------------------------------------------------------+-----------------------------------------+------------------+----------------+
+
+

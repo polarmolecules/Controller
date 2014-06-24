@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:26:55 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Mon Jun 23 11:53:04 2014
+# Process ID: 4811
+# Log file: /home/labuser/VivadoCompilationTest/RedPitaya/FPGA/release1/fpga/vivado/red_pitaya.runs/impl_1/red_pitaya_top.rdi
+# Journal file: /home/labuser/VivadoCompilationTest/RedPitaya/FPGA/release1/fpga/vivado/red_pitaya.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source red_pitaya_top.tcl -notrace

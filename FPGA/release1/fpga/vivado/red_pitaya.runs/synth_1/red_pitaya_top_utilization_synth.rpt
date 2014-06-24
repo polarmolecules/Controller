@@ -1,0 +1,190 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.3 (lin64) Build 329390 Wed Oct 16 18:26:55 MDT 2013
+| Date         : Tue Jun 24 10:24:10 2014
+| Host         : polarbox1 running 64-bit Ubuntu 14.04 LTS
+| Command      : report_utilization -file red_pitaya_top_utilization_synth.rpt -pb red_pitaya_top_utilization_synth.pb
+| Design       : red_pitaya_top
+| Device       : xc7z010
+| Design State : Synthesized
+-----------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+2. Memory
+3. DSP
+4. IO and GTX Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Loced | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| Slice LUTs*                | 3648 |     0 |     17600 | 20.72 |
+|   LUT as Logic             | 3631 |     0 |     17600 | 20.63 |
+|   LUT as Memory            |   17 |     0 |      6000 |  0.28 |
+|     LUT as Distributed RAM |    0 |     0 |           |       |
+|     LUT as Shift Register  |   17 |     0 |           |       |
+| Slice Registers            | 3806 |     0 |     35200 | 10.81 |
+|   Register as Flip Flop    | 3789 |     0 |     35200 | 10.76 |
+|   Register as Latch        |   17 |     0 |     35200 |  0.04 |
+| F7 Muxes                   |   20 |     0 |      8800 |  0.22 |
+| F8 Muxes                   |    1 |     0 |      4400 |  0.02 |
++----------------------------+------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
+
+
+2. Memory
+---------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Loced | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |   28 |     0 |        60 | 46.66 |
+|   RAMB36/FIFO*    |   28 |     0 |        60 | 46.66 |
+|     RAMB36E1 only |   28 |       |           |       |
+|   RAMB18          |    0 |     0 |       120 |  0.00 |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Loced | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |   28 |     0 |        80 | 35.00 |
+|   DSP48E1 only |   28 |       |           |       |
++----------------+------+-------+-----------+-------+
+
+
+4. IO and GTX Specific
+----------------------
+
++-----------------------------+------+-------+-----------+--------+
+|          Site Type          | Used | Loced | Available |  Util% |
++-----------------------------+------+-------+-----------+--------+
+| Bonded IOB                  |   95 |     0 |       100 |  95.00 |
+| Bonded IPADs                |    2 |     0 |         2 | 100.00 |
+| Bonded IOPADs               |    0 |     0 |       130 |   0.00 |
+| IBUFGDS                     |    0 |     0 |        96 |   0.00 |
+| IDELAYCTRL                  |    0 |     0 |         2 |   0.00 |
+| IN_FIFO                     |    0 |     0 |         8 |   0.00 |
+| OUT_FIFO                    |    0 |     0 |         8 |   0.00 |
+| PHASER_REF                  |    0 |     0 |         2 |   0.00 |
+| PHY_CONTROL                 |    0 |     0 |         2 |   0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |         8 |   0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |         8 |   0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       100 |   0.00 |
+| ODELAYE2/ODELAYE2_FINEDELAY |    0 |     0 |         0 |   0.00 |
+| IBUFDS_GTE2                 |    0 |     0 |         0 |   0.00 |
+| ILOGIC                      |    1 |     0 |       100 |   1.00 |
+|   ISERDES                   |    1 |       |           |        |
+| OLOGIC                      |   20 |     0 |       100 |  20.00 |
+|   OSERDES                   |    1 |       |           |        |
+|   ODDR                      |   19 |       |           |        |
++-----------------------------+------+-------+-----------+--------+
+
+
+5. Clocking
+-----------
+
++--------------+------+-------+-----------+-------+
+|   Site Type  | Used | Loced | Available | Util% |
++--------------+------+-------+-----------+-------+
+| BUFGCTRL     |   15 |     0 |        32 | 46.87 |
+| BUFIO        |    1 |     0 |         8 | 12.50 |
+|   BUFIO only |    1 |     0 |           |       |
+| MMCME2_ADV   |    0 |     0 |         2 |  0.00 |
+| PLLE2_ADV    |    1 |     0 |         2 | 50.00 |
+| BUFMRCE      |    0 |     0 |         4 |  0.00 |
+| BUFHCE       |    0 |     0 |        48 |  0.00 |
+| BUFR         |    1 |     0 |         8 | 12.50 |
++--------------+------+-------+-----------+-------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+--------+
+|  Site Type  | Used | Loced | Available |  Util% |
++-------------+------+-------+-----------+--------+
+| BSCANE2     |    0 |     0 |         4 |   0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |   0.00 |
+| DNA_PORT    |    1 |     0 |         1 | 100.00 |
+| EFUSE_USR   |    0 |     0 |         1 |   0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |   0.00 |
+| ICAPE2      |    0 |     0 |         2 |   0.00 |
+| STARTUPE2   |    0 |     0 |         1 |   0.00 |
+| XADC        |    1 |     0 |         1 | 100.00 |
++-------------+------+-------+-----------+--------+
+
+
+7. Primitives
+-------------
+
++-----------+------+
+|  Ref Name | Used |
++-----------+------+
+| FDRE      | 3592 |
+| LUT6      | 1168 |
+| LUT2      |  937 |
+| LUT4      |  860 |
+| LUT1      |  496 |
+| LUT5      |  401 |
+| CARRY4    |  342 |
+| LUT3      |  336 |
+| FDSE      |  180 |
+| BIBUF     |  130 |
+| IBUF      |   54 |
+| OBUF      |   33 |
+| RAMB36E1  |   28 |
+| DSP48E1   |   28 |
+| MUXF7     |   20 |
+| ODDR      |   19 |
+| SRL16E    |   17 |
+| LDCE      |   17 |
+| FDCE      |   17 |
+| OBUFT     |   16 |
+| BUFG      |   15 |
+| OBUFDS    |    4 |
+| IBUFDS    |    3 |
+| INV       |    2 |
+| XADC      |    1 |
+| PS7       |    1 |
+| PLLE2_ADV |    1 |
+| OSERDESE2 |    1 |
+| MUXF8     |    1 |
+| ISERDESE2 |    1 |
+| DNA_PORT  |    1 |
+| BUFR      |    1 |
+| BUFIO     |    1 |
++-----------+------+
+
+
+8. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+

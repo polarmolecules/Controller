@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "work" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "red_pitaya_ams_tb_behav" --prj "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/vivado/red_pitaya.sim/sim_1/behav/red_pitaya_ams_tb.prj" "work.red_pitaya_ams_tb" "work.glbl" 

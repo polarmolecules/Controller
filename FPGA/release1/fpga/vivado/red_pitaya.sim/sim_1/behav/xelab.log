@@ -1,0 +1,22 @@
+Vivado Simulator 2013.3
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2013.3/bin/unwrapped/lnx64.o/xelab --debug typical --relax -L work -L unisims_ver -L unimacro_ver -L secureip --snapshot red_pitaya_ams_tb_behav --prj /home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/vivado/red_pitaya.sim/sim_1/behav/red_pitaya_ams_tb.prj work.red_pitaya_ams_tb work.glbl 
+Multi-threading is on. Using 4 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/code/rtl/red_pitaya_ams.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/code/bench/sys_bus_model.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/code/bench/red_pitaya_ams_tb.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "/opt/Xilinx/Vivado/2013.3/data/verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/code/rtl/red_pitaya_ams.v" Line 47. Module red_pitaya_ams doesn't have a timescale but atleast one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/code/rtl/red_pitaya_ams.v" Line 47. Module red_pitaya_ams doesn't have a timescale but atleast one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.sys_bus_model_default
+Compiling module unisims_ver.XADC(INIT_41=16'b010111100001111...
+Compiling module work.red_pitaya_ams
+Compiling module work.red_pitaya_ams_tb
+Compiling module work.glbl
+Built simulation snapshot red_pitaya_ams_tb_behav

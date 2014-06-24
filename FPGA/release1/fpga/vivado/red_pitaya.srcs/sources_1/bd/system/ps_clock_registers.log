@@ -1,0 +1,30 @@
+############################################################
+              Zynq Internal frequencies log
+############################################################
+
+
+FAILED 
+
+PCW is not able to generate the required solution for PLL frequencies.
+Please try another set of combinations for the frequencies 
+
+
+
+Input Crystal Frequency:     33.000  MHz
+
+
+PLL frequencies :
+
+********************************************************************************
+|                        |    ARM PLL     |   DDR_PLL     |   IO_PLL    |           
+********************************************************************************
+| Prog Multiplier        |            40            32             1    
+| Frequency (MHz)        |      1320.000      1056.000         0.001    
+********************************************************************************
+
+
+
+ERROR: The Zynq design contains the ethernet (ENET) device with frequency sets at 
+  ENET0       : 125 (MHz)
+  With the current value of Input crystal frequency, the Zynq/XPS is not able to find the frequency solutions
+  for Ethernet devices within the set tolerance limit of < 0.500 (MHz) 

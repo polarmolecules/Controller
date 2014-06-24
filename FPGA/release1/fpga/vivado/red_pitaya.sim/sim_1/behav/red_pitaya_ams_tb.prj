@@ -1,0 +1,4 @@
+verilog work  "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/code/rtl/red_pitaya_ams.v"
+verilog work  "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/code/bench/sys_bus_model.v"
+verilog work  "/home/labuser/Vivado Compilation Test/RedPitaya/FPGA/release1/fpga/code/bench/red_pitaya_ams_tb.v"
+verilog work "/opt/Xilinx/Vivado/2013.3/data/verilog/src/glbl.v"
