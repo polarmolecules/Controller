@@ -1,0 +1,226 @@
+Release 2013.3 - libgen Xilinx EDK 2013.3 Build EDK_P.20131013
+ (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw/system.xml -lp ../bsp_repos -pe ps7_cortexa9_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_usb_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_i2c_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_spi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_spi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_i2c_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_spi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_spi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 35958224 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 35958624 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 35959024 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 35959424 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 35952224 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 35947024 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 35950624 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 35951024 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 35954624 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 35947424 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 35953424 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 35950224 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 35952624 ps7_gpv_0 is already appended - skip it
+-slave ps7_i2c_0
+IP 35948624 ps7_i2c_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 35953824 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 35955024 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 35954224 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 35951824 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 35944608 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 35945952 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 35955424 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 35955824 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 35953024 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 35956224 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 35956624 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 35957024 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 35948224 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 35957424 ps7_slcr_0 is already appended - skip it
+-slave ps7_spi_0
+IP 35949024 ps7_spi_0 is already appended - skip it
+-slave ps7_spi_1
+IP 35949424 ps7_spi_1 is already appended - skip it
+-slave ps7_ttc_0
+IP 35949824 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_0
+IP 27145328 ps7_uart_0 is already appended - skip it
+-slave ps7_uart_1
+IP 35943568 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 35947824 ps7_usb_0 is already appended - skip it
+-slave ps7_xadc_0
+IP 35951424 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_0 0} {serial1 aliasref ps7_uart_1 1} {ethernet0
+aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
