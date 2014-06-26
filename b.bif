@@ -1,0 +1,1 @@
+img:{[bootloader] build/memtest.elf build/fpga.bit build/u-boot.elf }
